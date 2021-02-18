@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>McInerneyMedia | Project I</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="icon" href="imagesscaled/logosmall.png" />
+    </head>
+    <!--Top centered website logo.-->
+    <body>
+        <div class="logo_art">
+            <h1>
+              <a href="index.html">
+                  <img alt="Centered logo of yellow pencil on white paper with purple swirl behind it." src="imagesscaled/logo4.png" width=72 height=72>
+                </a>
+          </h1>
+        </div>
+        <!--Centered navbar.-->
+        <div class="site_menu">
+          <ul>
+            <li><a href="uiux.html">UI/UX</a></li>
+            <li><a href="art.html">ART</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+          </ul>
+        </div>
+<!--Section containing pop-up button for returning to page tops.-->
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+        
+<script>
+
+var mybutton = document.getElementById("myBtn");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+<!--Main text and image documentation content for the page.-->
+          <div class="worksalt">
+            <div class="projects">
+              <br>
+            <h3>WCSJ REDESIGN</h3>
+            <p>My User Interface Design class (IDM-212), followed us redesigning a news-based website for 3 breakpoints; (phone, tablet, desktop). I decided to redesign WCSJ News, a county news site that had a terrible use of space and hardly any mobile support.</p>
+            <div class="projectwork">
+              <img src="imagesscaled/wcsjold.png" alt="Three different sized screens of the old WCSJ website.">
+            </div>
+            <p>At first I grabbed screens of the website at the various breakpoints. This was important for me, as I needed to map out the points where the site didn’t work, and easily plan strategies for the redesign and improvement.</p>
+            <div class="projectwork">
+              <img src="imagesscaled/wireframe.png" alt="A low fidelity wireframe of the three screens, on one pane and comprised of gray boxes.">
+            </div>
+            <p>I then translated the site’s components into sections, and broke them down individually. This loose wireframe of the old site would help when I began to build my new design in Sketch. In addition to building the design, we would use Flinto to design 5 unique interactions per breakpoint.</p>
+            <div class="projectwork">
+              <img src="imagesscaled/wscjsketch.png" alt="Various sketches of website designs on sketch paper.">
+            </div>
+            <p>My personal favorite part was the design and mock-up phase. Our instructor challenged us to make 25 unique designs for the breakpoints. I was able to think outside of the box a bit and consider elements that would allow me to create a design with 5 unique interactions.</p>
+            <div class="projectwork">
+              <img src="imagesscaled/wcsjnew.png" alt="Three different sized screens of Steven's redesigned WCSJ website.">
+            </div>
+            <p>Above are the final screens of my WSCJ website redesign. Working in Flinto and figuring out where to place the interactions was certainly a challenge. It was rewarding to improve the website, and I realized the importance of an adjustable interface across different screen sizes to maintain continuity.</p>
+            <br>
+            <br>
+            <br>
+          </div>
+        </div>
+        <!--Links to email and linkedin.-->
+        <footer>
+          <div class="bottom">
+          <a href="mailto:sam646@drexel.edu">
+            <img class="stevenlink" alt="Small Envelope, a linked image directing to Steven's email." src="imagesscaled/mail.png" width="26" height="19">
+            </a>
+          <a href="https://www.linkedin.com/in/steven-mcinerney-3b106819a/" target="_blank">
+            <img class="stevenlink" alt="IN Logo from Linkedin, a linked image directing to Steven's linkedin profile." src="imagesscaled/linkedin.png" width="20" height="20">
+            </a>
+          </div>
+    </footer>
+    </body>
+</html>

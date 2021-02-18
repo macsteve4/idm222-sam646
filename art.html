@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>McInerneyMedia | Art</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" href="imagesscaled/logosmall.png">
+    </head>
+    <!--Top centered website logo.-->
+    <body>
+        <div class="logo_art">
+            <h1>
+              <a href="index.html">
+                <img alt="Centered logo of yellow pencil on white paper with purple swirl behind it." src="imagesscaled/logo4.png" width=72 height=72>
+                </a>
+          </h1>
+        </div>
+        <!--Centered navbar.-->
+        <div class="site_menu">
+          <ul>
+            <li><a href="uiux.html">UI/UX</a></li>
+            <li><a href="art.html">ART</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+          </ul>
+        </div>
+      <!--Section containing pop-up button for returning to page tops.-->
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+        <script>
+
+          var mybutton = document.getElementById("myBtn");
+          
+          window.onscroll = function() {scrollFunction()};
+          
+          function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+              mybutton.style.display = "block";
+            } else {
+              mybutton.style.display = "none";
+            }
+          }
+          
+          function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+          }
+          </script>
+<!--Main gallery content for the page.-->
+          <div class="works"> 
+            <div class="physwork">
+              <img src="imagesscaled/bluemix.png" alt="Digital multimedia piece of masked figure glitching with 3D heads circling.">
+            </div>
+              <div class="physwork">
+                <img src="imagesscaled/chand.jpg" alt="Acrylic painting of gold chandelier next to deer skull and earth globe.">
+              </div>
+              <div class="physwork">
+                <img src="imagesscaled/walk.jpg" alt="Graphite pencil drawing of man in coat walking on abstract path.">
+              </div>
+              <div class="physwork">
+                <img src="imagesscaled/pepper.jpg" alt="Pastel piece of man in suit posing in-front of peppers.">
+              </div>
+              <div class="physwork">
+                <img src="imagesscaled/vet.jpg" alt="Charcoal piece of profile of US veteran.">
+              </div>
+              <div class="physwork">
+                <img src="imagesscaled/green.jpg" alt="Acrylic painting of a shoulder of green coat with red accent.">
+              </div>
+              <div class="physwork">
+                <img src="imagesscaled/poly.jpg" alt="Black and white watercolor painting of polygonal abstract scene.">
+              </div>
+              <div class="physwork">
+                <img src="imagesscaled/look.jpg" alt="Colored pencil piece of masked figure posing in black leather coat.">
+              </div>
+              <div class="physwork">
+                <img src="imagesscaled/sit.jpg" alt="Multimedia piece of Steven sitting in on stool.">
+              </div>
+              <div class="physwork">
+                <img src="imagesscaled/blue.jpg" alt="Acrylic painting of figure in blue holding up white mask in-front of them.">
+              </div>
+            <div class="physwork">
+              <img src="imagesscaled/DQ.jpg" alt="Digital painting of Steven grimacing inside of ice cream cup."> 
+            </div>
+            <div class="physwork">
+              <img src="imagesscaled/redgreen.png" alt="Digital piece of Steven screaming in elevator.">
+            </div>
+              </div>
+              <!--Links to email and linkedin.-->
+              <footer>
+                <div class="bottom">
+                <a href="mailto:sam646@drexel.edu">
+                  <img class="stevenlink" alt="Small Envelope, a linked image directing to Steven's email." src="imagesscaled/mail.png" width="26" height="19">
+                  </a>
+                <a href="https://www.linkedin.com/in/steven-mcinerney-3b106819a/" target="_blank">
+                  <img class="stevenlink" alt="IN Logo from Linkedin, a linked image directing to Steven's linkedin profile." src="imagesscaled/linkedin.png" width="20" height="20">
+                  </a>
+                </div>
+        </footer>
+    </body>
+</html>
