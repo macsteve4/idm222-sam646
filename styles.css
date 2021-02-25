@@ -126,6 +126,13 @@ bottom: 0;
   padding-right: 2rem;
   }
 
+/* The flexbox for my artwork. */
+.workcontainer {
+  justify-content: center;
+  flex-direction: row;
+  padding: 40px;
+  
+}
 
 .ul {
   text-align: center;
@@ -204,3 +211,5 @@ padding: 12px
 .bottom {
     text-align: center;
 }
+
+/* 
