@@ -116,7 +116,6 @@ bottom: 0;
 /* Margins for regular art images. */
 .physwork {
   margin: 2rem auto;
-  
   }
 
 /* Content padding specifically for projects. */
@@ -131,7 +130,6 @@ bottom: 0;
   justify-content: center;
   flex-direction: row;
   padding: 40px;
-
 }
 
 .ul {
@@ -185,6 +183,7 @@ margin-left: auto;
 margin-right: auto;
 padding: 12px
 }
+
 /* The formatting and scaling of the purple "top" button. */
 #myBtn {
   display: none;
