@@ -16,6 +16,11 @@
   font-style: normal;
   font-display: swap;
 }
+
+html {
+font-size: 100%;
+}
+
 /* Formatting for site elements to ensure consistency. */
 * {
   margin: 0;
@@ -107,6 +112,29 @@
   background-color: rgb(240, 240, 240);
 }
 
+/* The flexbox for my artwork. */
+.workcontainer {
+  justify-content: center;
+  flex-direction: row;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+  align-items: flex-start;
+  max-width: 1200px;
+
+}
+
+@media (max-width: 800px) {
+  .h3 {
+    font-family: Lato;
+    font-size: 59px;
+    padding-top: 1.6rem;
+    padding-left: 2rem;
+    padding-bottom: 1rem;
+  }
+
+}
+
 .projects {
   border-width: 0em;
 margin: auto;
@@ -125,12 +153,6 @@ bottom: 0;
   padding-right: 2rem;
   }
 
-/* The flexbox for my artwork. */
-.workcontainer {
-  justify-content: center;
-  flex-direction: row;
-  padding: 40px;
-}
 
 .ul {
   text-align: center;
@@ -153,6 +175,8 @@ h3 {
   padding-left: 2rem;
   padding-bottom: 1rem;
 }
+
+
 /* Placeable adherences for my about me page. */
 .about_me {
     border-width: 0em;
@@ -161,6 +185,7 @@ margin: auto;
 max-width: 540px;
 bottom: 0;
 }
+
 
 p {
   font-family: "Quattrocento Sans";
@@ -210,6 +235,3 @@ padding: 12px
 .bottom {
     text-align: center;
 }
-
-
-
