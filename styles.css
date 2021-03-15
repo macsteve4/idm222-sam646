@@ -107,6 +107,7 @@ font-size: 100%;
   background-color: black;
   padding: 0.5rem;
 }
+
 /* Sections follow content layout for projects. */
 .worksalt{
   background-color: rgb(240, 240, 240);
@@ -124,14 +125,31 @@ font-size: 100%;
 
 }
 
-@media (max-width: 800px) {
-  .h3 {
+@media screen and (max-width: 800px) {
+  h3 {
     font-family: Lato;
-    font-size: 59px;
+    font-size: 29px;
     padding-top: 1.6rem;
     padding-left: 2rem;
     padding-bottom: 1rem;
   }
+
+  .about_me {
+    border-width: 0em;
+    background-color: #dff3ff;
+margin: auto;
+max-width: 540px;
+bottom: 0;
+}
+
+.centered {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: black;
+  padding: 0.5rem;
+}
 
 }
 
@@ -168,23 +186,35 @@ bottom: 0;
   position: sticky;
 }
 
-h3 {
-  font-family: Lato;
-  font-size: 29px;
-  padding-top: 1.6rem;
+@media screen and (min-width: 801px) {
+  h3 {
+    font-family: Lato;
+    font-size: 39px;
+    padding-top: 1.6rem;
+    padding-left: 2rem;
+    padding-bottom: 1rem;
+  }
+
+  .about_me {
+    border-width: 0em;
+    background-color: #dff3ff;
+margin: auto;
+max-width: 780px;
+bottom: 0;
+}
+
+p.about {
+  font-family: "Quattrocento Sans";
+  font-size: 1.15rem;
+  max-width: 630px;
   padding-left: 2rem;
-  padding-bottom: 1rem;
+  padding-right: 2rem;
+}
+
 }
 
 
 /* Placeable adherences for my about me page. */
-.about_me {
-    border-width: 0em;
-    background-color: #dff3ff;
-margin: auto;
-max-width: 540px;
-bottom: 0;
-}
 
 
 p {
