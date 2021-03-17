@@ -213,6 +213,13 @@ p.about {
 
 }
 
+.aboutflex {
+  display: grid;
+  grid-template-areas:
+  'h3 h3'
+  'p picture'
+  'p.about p.about';
+}
 
 /* Placeable adherences for my about me page. */
 
@@ -230,7 +237,9 @@ p {
   margin-left: auto;
   margin-right: auto;
   border-radius: 8px;
+  grid-area: picture;
 }
+
 /* Guides for my linked footer content. */
 .stevenlink {
 display: inline-block;
