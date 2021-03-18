@@ -99,13 +99,27 @@ font-size: 100%;
   background-color: black;
 }
 
+h2.hi {
+  color: #000;
+  padding-bottom: 0.5rem;
+}
+
+p.hey {
+  color: #000;
+  padding-left: 0em;
+}
+
 .centered {
-  position: absolute;
-  top: 30%;
+  position: fixed;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: black;
-  padding: 0.5rem;
+  background-color: white;
+  border-style: solid;
+  border-width: 10px;
+  border-color: rgba(105, 24, 105, 0.534);
+  padding: 1rem;
+  max-width: 300px;
 }
 
 /* Sections follow content layout for projects. */
@@ -115,17 +129,19 @@ font-size: 100%;
 
 /* The flexbox for my artwork. */
 .workcontainer {
-  justify-content: center;
-  flex-direction: row;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-  align-items: flex-start;
-  max-width: 1200px;
+	display: grid;
+
 
 }
 
-@media screen and (max-width: 800px) {
+/* The flexbox for my about page. */
+.aboutflex {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+@media screen and (max-width: 999px) {
   h3 {
     font-family: Lato;
     font-size: 29px;
@@ -143,12 +159,20 @@ bottom: 0;
 }
 
 .centered {
-  position: absolute;
-  top: 30%;
+  position: fixed;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: black;
+  background-color: rgb(255, 255, 255);
   padding: 0.5rem;
+}
+
+p.top {
+  font-family: "Quattrocento Sans";
+  font-size: 1.15rem;
+  max-width: 536px;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 }
@@ -186,43 +210,86 @@ bottom: 0;
   position: sticky;
 }
 
-@media screen and (min-width: 801px) {
+p.about {
+  font-family: "Quattrocento Sans";
+  font-size: 1.15rem;
+  max-width: 600px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+@media screen and (min-width: 1000px) {
   h3 {
     font-family: Lato;
     font-size: 39px;
     padding-top: 1.6rem;
     padding-left: 2rem;
-    padding-bottom: 1rem;
+    padding-bottom: 1.5rem;
   }
 
   .about_me {
     border-width: 0em;
     background-color: #dff3ff;
-margin: auto;
-max-width: 780px;
-bottom: 0;
+    margin: auto;
+    max-width: 800px;
+    bottom: 0;
 }
 
 p.about {
   font-family: "Quattrocento Sans";
-  font-size: 1.15rem;
-  max-width: 630px;
+  font-size: 1.25rem;
+  max-width: 680px;
   padding-left: 2rem;
   padding-right: 2rem;
 }
 
+.artgrid {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-areas: "main main . sidebar";
+  margin: 3rem auto;
+  justify-content: center;
 }
 
-.aboutflex {
+.opener {
+  max-width: 400px;
+}
+
+p.top {
+  font-family: "Quattrocento Sans";
+  font-size: 1.25rem;
+  max-width: 536px;
+  padding-left: 0rem;
+  padding-right: 2rem;
+  margin-left: -1rem;
+}
+
+.gallery {
   display: grid;
-  grid-template-areas:
-  'h3 h3'
-  'p picture'
-  'p.about p.about';
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1.3rem;
+  justify-items: center;
+  align-items: center;
+  max-width: 900px;
+}
+
+aside {
+  grid-area: sidebar;
+  max-width: 300px;
+  margin-left: 1em;
+}
+
+}
+
+@media screen and (min-width: 1324px) {
+  aside {
+    grid-area: sidebar;
+    max-width: 300px;
+    margin-left: 5em;
+  }
 }
 
 /* Placeable adherences for my about me page. */
-
 
 p {
   font-family: "Quattrocento Sans";
@@ -233,11 +300,9 @@ p {
 }
 /* Unique placement for my about me image. */
 .me { 
-  display: block;
   margin-left: auto;
   margin-right: auto;
   border-radius: 8px;
-  grid-area: picture;
 }
 
 /* Guides for my linked footer content. */
