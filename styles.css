@@ -223,6 +223,13 @@ p.hey {
   max-width: 999px;
 }
 
+.pointeru {
+  margin-left: 30rem;
+  margin-top: .5rem;
+  margin-bottom: -4rem;
+  width: 7%;
+}
+
 .me { 
   margin-left: auto;
   margin-right: auto;
@@ -396,6 +403,19 @@ p.hey {
   margin-right: 2rem;
 }
 
+.pointeru {
+  width: 0%;
+}
+
+}
+
+/* Media rule for arrow property for screens under px, this includes most mobile based systems, had to put out of order because of how CSS processes rules*/
+
+@media screen and (max-width: 620px) {
+  .pointeru {
+    width: 0%;
+    margin-bottom: 0rem;
+  }
 }
 
 /*media rule for systems at 1300px & up, or wide monior/high res. */
