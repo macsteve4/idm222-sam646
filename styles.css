@@ -180,6 +180,11 @@ p.about {
     bottom: 0;
 }
 
+.pointer {
+  height: 0%;
+  width: 0%;
+}
+
 .centered {
   position: fixed;
   top: 40%;
@@ -386,6 +391,12 @@ p.hey {
   border-radius: 8px;
   width: 300px;
   height: 300px;
+}
+
+.pointer {
+  height: 50%;
+  width: 50%;
+  margin-right: 2rem;
 }
 
 }
