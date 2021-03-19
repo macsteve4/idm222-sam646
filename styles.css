@@ -99,29 +99,6 @@ font-size: 100%;
   background-color: black;
 }
 
-h2.hi {
-  color: #000;
-  padding-bottom: 0.5rem;
-}
-
-p.hey {
-  color: #000;
-  padding-left: 0em;
-}
-
-.centered {
-  position: fixed;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: white;
-  border-style: solid;
-  border-width: 10px;
-  border-color: rgba(105, 24, 105, 0.534);
-  padding: 1rem;
-  max-width: 300px;
-}
-
 /* Sections follow content layout for projects. */
 .worksalt{
   background-color: rgb(240, 240, 240);
@@ -153,9 +130,9 @@ p.hey {
   .about_me {
     border-width: 0em;
     background-color: #dff3ff;
-margin: auto;
-max-width: 540px;
-bottom: 0;
+    margin: auto;
+    max-width: 540px;
+    bottom: 0;
 }
 
 .centered {
@@ -163,8 +140,13 @@ bottom: 0;
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: rgb(255, 255, 255);
-  padding: 0.5rem;
+  background-color: white;
+  border-style: solid;
+  border-width: 10px;
+  border-color: rgba(105, 24, 105, 0.534);
+  padding: 1rem;
+  max-width: 300px;
+
 }
 
 p.top {
@@ -173,6 +155,31 @@ p.top {
   max-width: 536px;
   padding-left: 2rem;
   padding-right: 2rem;
+}
+
+h2.hi {
+  color: #000;
+  padding-bottom: 0.5rem;
+}
+
+p.hey {
+  color: #000;
+  padding-left: 0em;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 2rem;
+  justify-items: center;
+  align-items: center;
+  max-width: 999px;
+}
+
+.me { 
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 8px;
 }
 
 }
@@ -241,6 +248,7 @@ p.about {
   max-width: 680px;
   padding-left: 2rem;
   padding-right: 2rem;
+  margin-left: 2rem;
 }
 
 .artgrid {
@@ -249,6 +257,9 @@ p.about {
   grid-template-areas: "main main . sidebar";
   margin: 3rem auto;
   justify-content: center;
+  max-width: 1343px;
+  background: url(imagesscaled/artbg.svg);
+  background-repeat: no-repeat;
 }
 
 .opener {
@@ -279,6 +290,60 @@ aside {
   margin-left: 1em;
 }
 
+h2.hi {
+  color: #000;
+  padding-bottom: 0.5rem;
+  font-size: 3.5rem;
+  margin-bottom: .7rem;
+}
+
+p.hey {
+  color: #000;
+  padding-left: 0em;
+  font-size: 1.4rem;
+}
+
+.centered {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border-style: solid;
+  border-width: 10px;
+  border-color: rgba(105, 24, 105, 0.534);
+  padding: 1rem;
+  max-width: 450px;
+}
+
+.me { 
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 8px;
+  width: 300px;
+  height: 300px;
+}
+
+}
+
+@media screen and (min-width: 1300px) {
+  h2.hi {
+    color: #000;
+    padding-bottom: 0.5rem;
+    font-size: 4rem;
+    margin-bottom: 1rem;
+  }
+  
+  p.hey {
+    color: #000;
+    padding-left: 0em;
+    font-size: 1.6rem;
+  }
+
+  .centered {
+    max-width: 500px;
+  }
+
 }
 
 @media screen and (min-width: 1324px) {
@@ -298,19 +363,24 @@ p {
   padding-left: 2rem;
   padding-right: 2rem;
 }
-/* Unique placement for my about me image. */
-.me { 
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 8px;
-}
 
 /* Guides for my linked footer content. */
-.stevenlink {
+.stevenlinka {
 display: inline-block;
 margin-left: auto;
 margin-right: auto;
-padding: 12px
+padding: 12px;
+height: 19px;
+width: 26px;
+}
+
+.stevenlinkb {
+display: inline-block;
+margin-left: auto;
+margin-right: auto;
+padding: 12px;
+height: 20px;
+width: 20px;
 }
 
 /* The formatting and scaling of the purple "top" button. */
