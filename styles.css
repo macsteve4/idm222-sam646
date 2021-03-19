@@ -17,6 +17,8 @@
   font-display: swap;
 }
 
+/*items in this area follow universial scaling/ non-specific media rules.*/
+
 html {
 font-size: 100%;
 }
@@ -118,6 +120,49 @@ font-size: 100%;
   justify-content: center;
 }
 
+.projects {
+  border-width: 0em;
+margin: auto;
+max-width: 600px;
+bottom: 0;
+}
+/* Margins for regular art images. */
+.physwork {
+  margin: 2rem auto;
+  }
+
+/* Content padding specifically for projects. */
+.projectwork {
+  margin: 2rem auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  }
+
+
+.ul {
+  text-align: center;
+}
+/* Concerns the fonts and placement of the whole navbar. Some content may be filtered. */
+.site_menu {
+    list-style-type: none;
+    font-family: Lato;
+    font-size: 16px;
+  color: rgb(26, 26, 26);
+  text-align: center;
+  padding-bottom: 24px;
+  position: sticky;
+}
+
+p.about {
+  font-family: "Quattrocento Sans";
+  font-size: 1.15rem;
+  max-width: 600px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+/* Media rule for screens under 1000px, this includes most mobile based systems whether portait tablets or phones */
+
 @media screen and (max-width: 999px) {
   h3 {
     font-family: Lato;
@@ -184,175 +229,6 @@ p.hey {
 
 }
 
-.projects {
-  border-width: 0em;
-margin: auto;
-max-width: 600px;
-bottom: 0;
-}
-/* Margins for regular art images. */
-.physwork {
-  margin: 2rem auto;
-  }
-
-/* Content padding specifically for projects. */
-.projectwork {
-  margin: 2rem auto;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  }
-
-
-.ul {
-  text-align: center;
-}
-/* Concerns the fonts and placement of the whole navbar. Some content may be filtered. */
-.site_menu {
-    list-style-type: none;
-    font-family: Lato;
-    font-size: 16px;
-  color: rgb(26, 26, 26);
-  text-align: center;
-  padding-bottom: 24px;
-  position: sticky;
-}
-
-p.about {
-  font-family: "Quattrocento Sans";
-  font-size: 1.15rem;
-  max-width: 600px;
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
-@media screen and (min-width: 1000px) {
-  h3 {
-    font-family: Lato;
-    font-size: 39px;
-    padding-top: 1.6rem;
-    padding-left: 2rem;
-    padding-bottom: 1.5rem;
-  }
-
-  .about_me {
-    border-width: 0em;
-    background-color: #dff3ff;
-    margin: auto;
-    max-width: 800px;
-    bottom: 0;
-}
-
-p.about {
-  font-family: "Quattrocento Sans";
-  font-size: 1.25rem;
-  max-width: 680px;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  margin-left: 2rem;
-}
-
-.artgrid {
-  display: grid;
-  grid-template-rows: auto;
-  grid-template-areas: "main main . sidebar";
-  margin: 3rem auto;
-  justify-content: center;
-  max-width: 1343px;
-  background: url(imagesscaled/artbg.svg);
-  background-repeat: no-repeat;
-}
-
-.opener {
-  max-width: 400px;
-}
-
-p.top {
-  font-family: "Quattrocento Sans";
-  font-size: 1.25rem;
-  max-width: 536px;
-  padding-left: 0rem;
-  padding-right: 2rem;
-  margin-left: -1rem;
-}
-
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 1.3rem;
-  justify-items: center;
-  align-items: center;
-  max-width: 900px;
-}
-
-aside {
-  grid-area: sidebar;
-  max-width: 300px;
-  margin-left: 1em;
-}
-
-h2.hi {
-  color: #000;
-  padding-bottom: 0.5rem;
-  font-size: 3.5rem;
-  margin-bottom: .7rem;
-}
-
-p.hey {
-  color: #000;
-  padding-left: 0em;
-  font-size: 1.4rem;
-}
-
-.centered {
-  position: fixed;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: white;
-  border-style: solid;
-  border-width: 10px;
-  border-color: rgba(105, 24, 105, 0.534);
-  padding: 1rem;
-  max-width: 450px;
-}
-
-.me { 
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 8px;
-  width: 300px;
-  height: 300px;
-}
-
-}
-
-@media screen and (min-width: 1300px) {
-  h2.hi {
-    color: #000;
-    padding-bottom: 0.5rem;
-    font-size: 4rem;
-    margin-bottom: 1rem;
-  }
-  
-  p.hey {
-    color: #000;
-    padding-left: 0em;
-    font-size: 1.6rem;
-  }
-
-  .centered {
-    max-width: 500px;
-  }
-
-}
-
-@media screen and (min-width: 1324px) {
-  aside {
-    grid-area: sidebar;
-    max-width: 300px;
-    margin-left: 5em;
-  }
-}
 
 /* Placeable adherences for my about me page. */
 
@@ -408,4 +284,138 @@ width: 20px;
 /* Overall footer adherence. */
 .bottom {
     text-align: center;
+}
+
+/* Media rule for 1000px up screens, (desktop and landscape tablets)*/
+
+@media screen and (min-width: 1000px) {
+  h3 {
+    font-family: Lato;
+    font-size: 39px;
+    padding-top: 1.6rem;
+    padding-left: 2rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .about_me {
+    border-width: 0em;
+    background-color: #dff3ff;
+    margin: auto;
+    max-width: 800px;
+    bottom: 0;
+}
+
+p.about {
+  font-family: "Quattrocento Sans";
+  font-size: 1.25rem;
+  max-width: 600px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-left: 0.2rem;
+}
+
+.artgrid {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-areas: "main main . sidebar";
+  margin: 3rem auto;
+  justify-content: center;
+  max-width: 1343px;
+  background: url(imagesscaled/artbg.svg);
+  background-repeat: no-repeat;
+}
+
+.opener {
+  max-width: 400px;
+}
+
+p.top {
+  font-family: "Quattrocento Sans";
+  font-size: 1.35rem;
+  max-width: 536px;
+  padding-left: 0rem;
+  padding-right: 2rem;
+  margin-left: -1rem;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1.3rem;
+  justify-items: center;
+  align-items: center;
+  max-width: 900px;
+  text-shadow: 10px 10px 20px #a0a0a0
+}
+
+aside {
+  grid-area: sidebar;
+  max-width: 300px;
+  margin-left: 1em;
+}
+
+h2.hi {
+  color: #000;
+  padding-bottom: 0.5rem;
+  font-size: 3.5rem;
+  margin-bottom: .7rem;
+}
+
+p.hey {
+  color: #000;
+  padding-left: 0em;
+  font-size: 1.4rem;
+}
+
+.centered {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border-style: solid;
+  border-width: 10px;
+  border-color: rgba(105, 24, 105, 0.534);
+  padding: 1rem;
+  max-width: 450px;
+}
+
+.me { 
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 8px;
+  width: 300px;
+  height: 300px;
+}
+
+}
+
+/*media rule for systems at 1300px & up, or wide monior/high res. */
+
+@media screen and (min-width: 1300px) {
+  h2.hi {
+    color: #000;
+    padding-bottom: 0.5rem;
+    font-size: 4rem;
+    margin-bottom: 1rem;
+  }
+  
+  p.hey {
+    color: #000;
+    padding-left: 0em;
+    font-size: 1.6rem;
+  }
+
+  .centered {
+    max-width: 500px;
+  }
+
+}
+
+@media screen and (min-width: 1324px) {
+  aside {
+    grid-area: sidebar;
+    max-width: 300px;
+    margin-left: 5em;
+  }
 }

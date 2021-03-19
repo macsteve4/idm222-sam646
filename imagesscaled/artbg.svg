@@ -1,1 +1,20 @@
-<svg id="Layer_5" data-name="Layer 5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 542.74 706.56"><polygon points="3.42 99.28 20.1 1.42 397.48 29.59 391.18 71.09 3.42 99.28" style="fill:#90449a;opacity:0.5;isolation:isolate"/><polygon points="4.42 188.85 17.11 249.84 384.49 289.27 398.05 290.72 415.48 292.6 387.16 150.25 4.42 188.85" style="fill:#90449a;opacity:0.6499999761581421;isolation:isolate"/><polygon points="4.42 347.56 522.36 411.82 510.88 478.35 18 542.45 4.42 347.56" style="fill:#90449a;opacity:0.5;isolation:isolate"/><polygon points="482.32 706.57 0 672.5 5.42 635.62 157.08 621.74 470.41 593.07 482.32 706.57" style="fill:#90449a;opacity:0.6499999761581421;isolation:isolate"/><path d="M444.16,207.05l.84-47.23L427,79l24-61L504.06.94,540.65,8.1l-6.13,70.83q4.61,40,9.22,79.94-6.06,27.18-12.13,54.37l5.42,48-95.22-15.48Z" transform="translate(-1 -0.94)" style="fill:#e1e02c;opacity:0.5;isolation:isolate"/></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 542.7 706.6" style="enable-background:new 0 0 542.7 706.6;" xml:space="preserve">
+<style type="text/css">
+	.st0{opacity:0.45;fill:#90449A;enable-background:new    ;}
+	.st1{opacity:0.5;fill:#90449A;enable-background:new    ;}
+	.st2{opacity:0.25;fill:#90449A;enable-background:new    ;}
+	.st3{opacity:0.55;fill:#90449A;enable-background:new    ;}
+	.st4{opacity:0.45;fill:#E1E02C;enable-background:new    ;}
+	.st5{fill:#E1E02C;}
+</style>
+<polygon class="st0" points="1.9,99.4 21.4,2.1 388.8,42.1 381.3,83.4 "/>
+<polygon class="st1" points="3.6,189.2 17.1,249.9 361.1,279.7 373.8,280.8 390.1,282.2 359.7,140.7 "/>
+<polygon class="st2" points="4.4,347.6 522.4,411.8 510.9,478.4 18,542.5 "/>
+<polygon class="st3" points="482.3,681.3 0,647.2 5.4,610.3 157.1,596.4 470.4,567.8 "/>
+<path class="st4" d="M445.8,212.4l0.8-52.6l-17-90.1l22.7-68l82.9,15.9l-3.8,52.1c2.9,29.7,5.8,59.4,8.7,89.1
+	c-3.8,20.2-7.7,40.4-11.5,60.6l5.1,53.5l-90.2-17.3L445.8,212.4z"/>
+<path class="st5" d="M450,32.2"/>
+</svg>
