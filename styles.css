@@ -106,11 +106,9 @@ font-size: 100%;
   background-color: rgb(240, 240, 240);
 }
 
-/* The flexbox for my artwork. */
+/* The grid for my artwork. */
 .workcontainer {
 	display: grid;
-
-
 }
 
 /* The flexbox for my about page. */
@@ -196,7 +194,6 @@ p.about {
   border-color: rgba(105, 24, 105, 0.534);
   padding: 1rem;
   max-width: 300px;
-
 }
 
 p.top {
