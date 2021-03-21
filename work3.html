@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>McInerneyMedia | Project II</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="icon" href="imagesscaled/logosmall.png" />
+    </head>
+    <body>
+      <!--Top centered website logo.-->
+        <div class="logo_art">
+            <h1>
+              <a href="index.html">
+                  <img alt="Centered logo of yellow pencil on white paper with purple swirl behind it." src="imagesscaled/logo4.png" width=72 height=72>
+                </a>
+          </h1>
+        </div>
+<!--Centered navbar.-->
+        <div class="site_menu">
+          <ul>
+            <li><a href="uiux.html">UI/UX</a></li>
+            <li><a href="art.html">ART</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+          </ul>
+        </div>
+<!--Section containing pop-up button for returning to page tops.-->
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+        
+<script>
+
+var mybutton = document.getElementById("myBtn");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+</script>
+<!--Main text and image documentation content for the page.-->
+<div class="worksalt">
+  <div class="projects">
+    <br>
+  <h3>PANDORA REBRAND</h3>
+            <p>In my Interaction Design class (IDM-213), we were directed to redesign and rebrand an application of our choice. The focus here was on the micro-interactions that made up the task-flow. I chose to redesign the Pandora Radio app, because I thought that the task-flow was messy and interactions lacked brand specific attributes.</p>
+            <br>
+            <p>For our IDM-212 class, we used Flinto to build, design, and to concern interactions in our projects. We also adhered to the same branding and color scheme as the original site. This time around, we manually created interactions and designs from scratch, and then animated them in Adobe After Effects. We were responsible	with rebranding the app as well.</p>
+            <div class="projectwork">
+              <img src="imagesscaled/realold.png" alt="Six different screens from various locations on the old Pandora Radio app.">
+            </div>
+            <p>Before even approaching the idea of a design, I began with gathering all of the screens that the user would come across in Pandora Radio. I did user-demographic research to figure out what my audience would be, and who uses Pandora Radio.</p>
+            <div class="projectwork">
+              <img src="imagesscaled/realtask.png" alt="A mapping of each screen with arrows, following the steps of saving a song.">
+            </div>
+            <p>I then focused on the screens that the user would interact with when carrying out the task of adding a song their personalized radio. I mapped out the task-flow of the screens, and noted specific micro-interactions. <b>This original task-flow was overcomplicated, bloated, and generic, for what it wanted to accomplish.</b></p>
+            <div class="projectwork">
+              <img src="imagesscaled/realbrand.png" alt="Rebrand sheet, with the selected title of 'Real-Radio' next to a red radio icon.">
+            </div>
+            <p>After mapping out the flow, I took my user-demographic research; (finding that the primary user groups were aged 25-34, and 55+) and designed my rebranding accordingly. I knew that these groups valued straightforward, representative, design and wouldn’t care for the gimmicky “new” approaches to simple tasks. My new app would be called <i>RealRadio</i>, illustrating the ‘personal’ and ‘genuine’ feel a user would have from personalized playlists.</p>
+            <div class="projectwork">
+              <img src="imagesscaled/realnew.png" alt="4 new screens from the Real-Radio app. Mapped with arrows to each button.">
+            </div>
+            <p>Above is my final interaction guide illustrating my new task-flow. Elements of the screen were animated, the process was reduced down to just 4 screens, and buttons were made easily accessible. I enjoyed reworking this app because I had full creative control of the product, and had to consider new components such as animations for my interactions. It was definitely a rewarding process.</p>
+            <br>
+            <br>
+            <br>
+        </div>
+      </div>
+<!--Links to email and linkedin.-->
+<footer>
+  <div class="bottom">
+  <a href="mailto:sam646@drexel.edu">
+    <img class="stevenlinka" alt="Small Envelope, a linked image directing to Steven's email." src="imagesscaled/mail.png">
+    </a>
+  <a href="https://www.linkedin.com/in/steven-mcinerney-3b106819a/" target="_blank">
+    <img class="stevenlinkb" alt="IN Logo from Linkedin, a linked image directing to Steven's linkedin profile." src="imagesscaled/linkedin.png">
+    </a>
+  </div>
+</footer>
+    </body>
+</html>
