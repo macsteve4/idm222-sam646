@@ -87,6 +87,11 @@ font-size: 100%;
     margin-right: auto;
   }
 
+.stevenlogo {
+  width: 72px;
+  height: 72px;
+}
+
 .works {
     background-color: rgb(240, 240, 240);
     padding: 20px
