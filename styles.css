@@ -338,6 +338,13 @@ p.about {
   max-width: 400px;
 }
 
+.worksize {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 800px;
+
+}
+
 p.top {
   font-family: "Quattrocento Sans";
   font-size: 1.35rem;
